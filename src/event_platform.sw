@@ -10,3 +10,12 @@ use std::{
     identity::Identity;
     contract_id::ContractID;
 }
+
+
+abi eventPlatform {
+    #[storage(read, write)]
+    fn create_event(maxCapacity: u64, deposit: u64, eventName: str[10]) -> Event;
+
+    #[storage(read, write)] 
+    fn rsvp(eventIDd: u64) -> Event;
+}
