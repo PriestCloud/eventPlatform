@@ -7,9 +7,9 @@
 library event_platform;
 
 use std::{
-    identity::Identity;
-    contract_id::ContractID;
-}
+    identity::Identity,
+    contract_id::ContractID,
+};
 
 
 abi eventPlatform {
@@ -26,8 +26,6 @@ pub struct Event{
     maxCapacity: u64,
     deposit: u64,
     owner:Identity,
-    name:str[10]
-    numberOfRsvps: u64 
-
-
+    name:str[10],
+    numberOfRsvps: u64,
 }
